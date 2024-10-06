@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodiversidad en Cundinamarca y Boyacá</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h1><i class="fas fa-leaf"></i> Explorando la Biodiversidad en Cundinamarca y Boyacá</h1>
+        <nav class="navbar">
+            <button onclick="navigateTo('info')"><i class="fas fa-info-circle"></i> Información</button>
+            <button onclick="navigateTo('map')"><i class="fas fa-map-marked-alt"></i> Mapa</button>
+            <button onclick="navigateTo('contact')"><i class="fas fa-envelope"></i> Contacto</button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section id="info" class="content-section">
+            <h2>Información General</h2>
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Biodiversidad en Cundinamarca y Boyacá</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Biodiversidad en Boyacá</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Por otro lado, <strong>Boyacá</strong> es conocida por su riqueza en flora y
+                                        fauna, con un paisaje que abarca <em>montañas</em>,
+                                        <em>valles</em> y <em>ríos</em> que favorecen la vida silvestre. La región es
+                                        hogar de especies como el <strong>venado cola blanca</strong>
+                                        y diversas especies de <strong>anfibios</strong>, <strong>reptiles</strong> y
+                                        <strong>aves migratorias</strong>. La importancia de estos ecosistemas
+                                        no solo radica en la diversidad biológica, sino también en los <strong>servicios
+                                            ecosistémicos</strong> que proporcionan, como la
+                                        <strong>regulación del clima</strong>, la <strong>conservación del agua</strong>
+                                        y la <strong>fertilidad del suelo</strong>.
+                                        La conservación de la biodiversidad en estas regiones es esencial para el
+                                        desarrollo sostenible y el bienestar de las comunidades locales,
+                                        que dependen de estos recursos naturales para su subsistencia. La educación y la
+                                        sensibilización sobre la biodiversidad son fundamentales
+                                        para promover acciones de conservación y el uso responsable de los recursos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Biodiversidad en Cundinamarca</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        La biodiversidad en <strong>Cundinamarca</strong> es rica y variada, incluyendo
+                                        una gran variedad de especies de flora y fauna.
+                                        Esta región es crucial para la conservación del medio ambiente en
+                                        <strong>Colombia</strong>. Cundinamarca alberga ecosistemas diversos,
+                                        desde <em>páramos</em> en la cordillera oriental hasta <em>bosques andinos</em>
+                                        y <em>zonas húmedas</em>, que son hábitats para numerosas
+                                        especies de aves, mamíferos y plantas endémicas. Entre las especies más
+                                        emblemáticas se encuentran el <strong>oso de anteojos</strong>,
+                                        el <strong>cóndor de los Andes</strong> y varias orquídeas únicas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/semana/LHMYCBYBH5EH5N5C3DSP2XXKUA.jpg"
+                        alt="Biodiversidad" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section id="map" class="content-section" style="display: none;">
+            <div class="eco-card">
+                <h2><i class="fas fa-map"></i> Mapa de Regiones</h2>
+                <div id="map-container"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section" style="display: none;">
+            <div class="eco-card">
+                <h2><i class="fas fa-paper-plane"></i> Contacto</h2>
+                <p>Si deseas más información, contáctanos en <a
+                        href="mailto:info@biodiversidad.com">info@biodiversidad.com</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-heart"></i> 2024 Biodiversidad en Cundinamarca y Boyacá. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</html>
